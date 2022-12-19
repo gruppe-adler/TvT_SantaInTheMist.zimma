@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=778;
+		nextID=788;
 	};
 	class MarkerIDProvider
 	{
-		nextID=9;
+		nextID=10;
 	};
 	class Camera
 	{
-		pos[]={4879.4043,74.275925,6412.5981};
-		dir[]={0,-0.70710677,0.70710683};
-		up[]={0,0.70710677,0.70710671};
-		aside[]={0.99999994,0,-0};
+		pos[]={5159.3926,26.252583,7568.1953};
+		dir[]={-0.0042020814,-0.70262408,0.71155304};
+		up[]={-0.0041492176,0.71155864,0.70261317};
+		aside[]={0.99998426,-2.2020686e-008,0.005905448};
 	};
 };
 binarizationWanted=0;
@@ -74,13 +74,14 @@ addons[]=
 	"tfar_backpacks",
 	"tfar_handhelds",
 	"A3_Boat_F_Exp_Boat_Transport_02",
-	"xakuda_f_xs_Snowmobile"
+	"xakuda_f_xs_Snowmobile",
+	"GR_GR_Christmas_Boat"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=41;
+		items=42;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -355,6 +356,11 @@ class AddonsMetaData
 		{
 			className="xakuda_f_xs_Snowmobile";
 			name="xakuda_f_xs_Snowmobile";
+		};
+		class Item41
+		{
+			className="GR_GR_Christmas_Boat";
+			name="GR_GR_Christmas_Boat";
 		};
 	};
 };
@@ -4266,7 +4272,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=120;
+		items=129;
 		class Item0
 		{
 			dataType="Marker";
@@ -11480,7 +11486,7 @@ class Mission
 			};
 			id=647;
 			type="land_gm_euro_furniture_radio_01";
-			atlOffset=3.8146973e-006;
+			atlOffset=9.5367432e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12174,6 +12180,132 @@ class Mission
 			id=775;
 			type="xs_Snowmobile_base";
 			atlOffset=1.5258789e-005;
+		};
+		class Item120
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={919.22583,3.273401,4175.0859};
+				angles[]={0,3.2847648,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=778;
+			type="GE_Christmas_Boat_01";
+			atlOffset=3.4412541;
+		};
+		class Item121
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={924.80725,3.3316004,4174.5566};
+				angles[]={0,3.2847648,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=779;
+			type="GE_Christmas_Boat_01";
+			atlOffset=3.5137405;
+		};
+		class Item122
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8006.3286,2.342567,4191.8389};
+				angles[]={0,1.3155841,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=781;
+			type="GE_Christmas_Boat_01";
+			atlOffset=3.2956851;
+		};
+		class Item123
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8004.6514,2.1654761,4197.188};
+				angles[]={0,1.3155841,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=782;
+			type="GE_Christmas_Boat_01";
+			atlOffset=3.3681717;
+		};
+		class Item124
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5157.7217,3.6042271,7594.6846};
+				angles[]={0,0.067006782,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=783;
+			type="GE_Christmas_Boat_01";
+			atlOffset=3.2906432;
+		};
+		class Item125
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5152.1167,3.7045898,7594.7876};
+				angles[]={0,0.067006782,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=784;
+			type="GE_Christmas_Boat_01";
+			atlOffset=3.3631301;
+		};
+		class Item126
+		{
+			dataType="Marker";
+			position[]={5157.5762,0,7597.7891};
+			name="marker_9";
+			text="boats";
+			type="mil_circle";
+			id=785;
+			atlOffset=1.4941797;
+		};
+		class Item127
+		{
+			dataType="Marker";
+			position[]={8003.3374,-0.12278795,4191.5625};
+			name="marker_10";
+			text="boats";
+			type="mil_circle";
+			id=786;
+			atlOffset=1.4941797;
+		};
+		class Item128
+		{
+			dataType="Marker";
+			position[]={915.18158,0.019404173,4175.3018};
+			name="marker_11";
+			text="boats";
+			type="mil_circle";
+			id=787;
+			atlOffset=1.4941797;
 		};
 	};
 	class Connections
