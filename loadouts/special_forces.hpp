@@ -1,8 +1,7 @@
 class special_forces_w {
     class AllUnits {
         uniform[] = {
-            "SMA_UNIFORMS_BLACK",
-            "SMA_UNIFORMS_GREEN"
+            "rhs_uniform_g3_blk"
         };
         vest = "V_BandollierB_rgr";
         backpack[] = {
