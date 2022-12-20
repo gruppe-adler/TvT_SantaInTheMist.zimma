@@ -30,6 +30,7 @@ _briefcase attachTo [_unit,_offset,""]; */
         _pos params ["_posX", "_posY"];
         private _type = ["MedicalGarbage_01_1x1_v1_F","MedicalGarbage_01_3x3_v2_F"] select (abs (getTerrainHeightASL [_posX, _posY, 0]) > 1);
         [_briefcase, _posX, _posY, _type] remoteExecCall [QFUNC(spawnBriefCaseContents), 0, QGVAR(debrisJIPID)];
+        [_briefcase] call mitm_briefcase_fnc_spawnOnWaterSurface;
     };
 
 },[_briefcase, _unit],0.5] call CBA_fnc_waitAndExecute;

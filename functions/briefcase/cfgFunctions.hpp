@@ -16,6 +16,7 @@ class mitm_briefcase {
         class onKilled {};
         class onUnconscious {};
         class onWeaponChanged {};
+        class spawnOnWaterSurface {};
         class showTracker {};
         class spawnBriefCaseContents {};
         class trackBriefcase {};

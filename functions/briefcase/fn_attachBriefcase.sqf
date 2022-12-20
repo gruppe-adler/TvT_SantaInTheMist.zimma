@@ -56,8 +56,24 @@ if (_vehicleMode) then {
                                             _briefcase attachTo [_vehicle,[0.123535,-0.563399,-0.466034]];
                                             _briefcase setVectorDirAndUp ([[vectorDirVisual _vehicle, vectorUpVisual _vehicle], 0, 90, 0] call BIS_fnc_transformVectorDirAndUp);
                                         } else {
-                                            // fallback
-                                            _briefcase attachTo [_vehicle,[0,0,-100]];
+
+                                            if (_vehicle isKindOf "GE_Christmas_Boat_01") then {
+                                                _briefcase attachTo [0.0649414,-1.14124,-0.490302];
+                                            } else {
+                                                if (_vehicle isKindOf "xs_Snowmobile_combat") then {
+                                                    _briefcase attachTo [_vehicle,[0.0825195,-1.33567,-.5]];
+                                                    _briefcase setVectorDirAndUp ([[-0.981144,0.0772819,-0.177153],[-0.173326,0.0537447,0.983397]]);
+                                                } else {
+                                                    if (_vehicle isKindOf "xs_Snowmobile_base") then {
+                                                        _briefcase attachTo [_vehicle,[0.0825195,-1.33567,1]];
+                                                        _briefcase setVectorDirAndUp ([[-0.981144,0.0772819,-0.177153],[-0.173326,0.0537447,0.983397]]);
+                                                    } else {
+                                                        // fallback
+                                                        _briefcase attachTo [_vehicle,[0,0,-100]];  
+                                                    }
+                                                };
+                                            };
+                                            
                                         };
                                     };
                                 };
@@ -70,7 +86,7 @@ if (_vehicleMode) then {
     };
 
 } else {
-    _briefcase attachTo [_unit,[-0.03,-0.3,0],"spine3"];
+    _briefcase attachTo [_unit,[-0.03,-0.3,0],"spine3", true];
     _briefcase setVectorDirAndUp ([[vectorDirVisual _unit, vectorUpVisual _unit], 0, -20, 10] call BIS_fnc_transformVectorDirAndUp);
 };
 // _briefcase setVectorDirAndUp [[1,0,0],[0,0,1]];
